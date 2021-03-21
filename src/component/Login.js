@@ -48,7 +48,7 @@ const Login =(props)=>{
             setPassword("");
             setUserName("");
             console.log('login data',formData)
-            props.history.push('/todo')
+            props.history.push(`/todo/${userName}`)
         }
     }
     return(

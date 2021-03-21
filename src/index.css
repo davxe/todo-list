@@ -111,7 +111,6 @@
   background-size: auto;
   display: grid;
   grid-template-rows:60px 100px 200px;
-  grid-auto-rows: auto;
 }
 .todoHeader{
   width: 300px;

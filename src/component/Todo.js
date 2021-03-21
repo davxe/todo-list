@@ -37,11 +37,12 @@ const Todo=(props)=>{
     }
     // finding date and month
     let month= new Date().toLocaleString("en-us", {day:"numeric",month: "short"})
-
+    let name=props.match.params.name
+    console.log(name)
     return(
         <div className='todoContainer'>
             <div className='todoHeader'>
-                <h2 className='todoName'>Hello UserName</h2><hr className='todoLine'/>
+                <h2 className='todoName'>Hello {name}</h2><hr className='todoLine'/>
             </div>
             <div className='todoFormField'>
                 <table>

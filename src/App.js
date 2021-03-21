@@ -6,7 +6,7 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Route exact path='/' component={Login}/>
-        <Route exact path='/todo' component={Todo}/>
+        <Route exact path='/todo/:name' component={Todo}/>
       </div>
     </BrowserRouter>
   );
