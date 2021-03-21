@@ -1,13 +1,157 @@
-body {
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
+.loginContainer{
+  width: 800px;
+  margin:110px auto;
+  height: 400px;
+  background-size: auto;
+  display: grid;
+  grid-template-rows: 305px 100px;
+  grid-template-columns: 1fr;
+}
+.formContainer{
+  margin-top: 50px;
+  margin-left: 25px;
+  border:1px solid rgb(0, 174, 255);
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  display: grid;
+  grid-template-rows: 49.5px,50px,repeat(2,49.5px);
+  grid-auto-rows: auto;
+  grid-template-columns:0.33fr 0.33fr 1fr ;
+}
+.formHeader{
+  grid-column: 1/5;
+  background-color:rgb(0, 174, 255);
+}
+.loginHeader{
+  color:black;
+  padding-left: 8px;
+  padding-top: 5px;
+}
+.userInput{
+  grid-column: 1/5;
+  background-color:rgb(100, 164, 195);
+}
+.label{
+  padding-left: 8px;
+  padding-top: 8px;
+  font-size: 22px;
+  justify-items: center;
+  grid-column: 1/2;
+}
+.input{
+  display: grid;
+  grid-column: 2/4;
+  height: 46px;
+  padding-top: 8px;
+  padding-left: 40px;
+  width: 600px;
+}
+.field{
+  border-radius: 5px;
+  font-size: larger;
+  outline: none;
+  border: none;
+  height: 30px;
+}
+.passwordInput{
+  grid-column: 1/5;
+  background-color:rgb(100, 164, 195);
+}
+.inputp{
+  display: grid;
+  grid-column: 2/4;
+  height: 45px;
+  padding-top: 4px;
+  margin-left: 5px;
+  padding-bottom: 4px;
+  padding-left: 40px;
+  width: 600px;
+}
+.button{
+  display: grid;
+  padding-left: 95px;
+  grid-template-rows:49.5px ;
+  grid-template-columns: 250px 1fr;
+  grid-column: 1/5;
+  background-color:rgb(100, 164, 195);
+}
+.buttontag{
+  grid-column: 1/2;
+  height: 30px;
+  outline: none;
+  border: 1px solid grey;
+  color:white;
+  font-size: 22px;
+  border-radius: 5px;
+  margin-left: 50px;
+  width: 200px;
+  margin-top: 9px;
+  background-color: rgb(19, 86, 231);
+  justify-items: center;
+}
+.usernameError{
+  color: red;
+}
+.passwordError{
+  color:red;
+}
+.todoContainer{
+  width: 800px;
+  margin:110px auto;
+  height: auto;
+  background-size: auto;
+  display: grid;
+  grid-template-rows:60px 100px 200px;
+  grid-auto-rows: auto;
+}
+.todoHeader{
+  width: 300px;
+}
+.todoName{
+  padding:5px;
+  margin-bottom: 5px;
+}
+.todoLine{
+  background-color: lightgray;
+  height: 4px;
+  width: 300px;
+}
+.todoFormField{
+  width:450px;
+  padding-top: 25px;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.todoInput{
+  height: 37px;
+  width: 310px;
+  outline: none;
+  margin-bottom: 3px;
+  font-size: larger;
+}
+.todoButton{
+  height: 37px;
+  border: none;
+  outline: none;
+  width: 100px;
+  font-size: 18px;
+  margin-bottom:9px ;
+  background-color: cornflowerblue;
+}
+.todoTable{
+  padding-top: 20px;
+}
+.todoList{
+  font-size: 22px;
+  border: 1px solid;
+  width: 310px;
+  text-align: justify;
 }
